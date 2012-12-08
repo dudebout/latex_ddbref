@@ -1,0 +1,10 @@
+\ProvidesPackage{ddbcref}
+
+\DeclareOption{serialcomma}{\newcommand{\creflastconjunction}{, and~}}
+\DeclareOption*{\PassOptionsToPackage{\CurrentOption}{cleveref}}
+\ProcessOptions
+\RequirePackage[capitalize]{cleveref}[2012/09/27]
+
+\crefname{equation}{}{}
+\Crefname{equation}{Equation}{Equations}
+\crefname{assumption}{Assumption}{Assumptions}

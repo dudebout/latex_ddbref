@@ -1,0 +1,10 @@
+\ProvidesPackage{ddbhref}
+
+\DeclareOption*{\PassOptionsToPackage{\CurrentOption}{hyperref}}
+\ProcessOptions
+\RequirePackage{hyperref}
+\hypersetup{ colorlinks=true
+           , linkcolor=black
+           , citecolor=black
+           , urlcolor=black
+           }
